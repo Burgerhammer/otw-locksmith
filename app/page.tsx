@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { LogoFull, LogoIcon } from "./components/Logo";
 import { ContactForm } from "./components/ContactForm";
 
@@ -81,60 +80,42 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="relative bg-otw-navy pt-16 overflow-hidden">
+      <section className="relative bg-otw-navy pt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-otw-navy via-otw-navy-light to-otw-navy opacity-90" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <span className="bg-otw-orange/20 text-otw-orange text-sm font-semibold px-3 py-1 rounded-full">
-                  Licensed & Insured
-                </span>
-                <span className="bg-white/10 text-gray-300 text-sm px-3 py-1 rounded-full">
-                  South Florida
-                </span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-                Locked Out?{" "}
-                <span className="text-otw-orange">We&apos;re On The Way.</span>
-              </h1>
-              <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl">
-                Fast, reliable locksmith services for your home, business, and
-                vehicle. Available 24/7 with no hidden fees.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:+15615410172"
-                  className="inline-flex items-center justify-center gap-2 bg-otw-orange text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-otw-orange-dark transition-colors"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  Call Now
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/10 transition-colors"
-                >
-                  Get a Free Quote
-                </a>
-              </div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-32">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="bg-otw-orange/20 text-otw-orange text-sm font-semibold px-3 py-1 rounded-full">
+                Licensed & Insured
+              </span>
+              <span className="bg-white/10 text-gray-300 text-sm px-3 py-1 rounded-full">
+                South Florida
+              </span>
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10">
-                <Image
-                  src="/smokey-otw-opt.jpg"
-                  alt="Smokey the OTW Locksmith dog riding in the service vehicle"
-                  width={800}
-                  height={800}
-                  className="object-cover w-full h-auto"
-                  priority
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                  <p className="text-white font-bold text-lg">Meet Smokey</p>
-                  <p className="text-gray-300 text-sm">Our co-pilot on every call</p>
-                </div>
-              </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+              Locked Out?{" "}
+              <span className="text-otw-orange">We&apos;re On The Way.</span>
+            </h1>
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl">
+              Fast, reliable locksmith services for your home, business, and
+              vehicle. Available 24/7 with no hidden fees.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="tel:+15615410172"
+                className="inline-flex items-center justify-center gap-2 bg-otw-orange text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-otw-orange-dark transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call Now
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/10 transition-colors"
+              >
+                Get a Free Quote
+              </a>
             </div>
           </div>
         </div>
